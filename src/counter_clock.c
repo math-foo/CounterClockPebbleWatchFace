@@ -36,7 +36,7 @@ static void hands_update_proc(Layer *layer, GContext *ctx) {
   gpath_draw_filled(ctx, s_minute_arrow);
   gpath_draw_outline(ctx, s_minute_arrow);
 
-  int32_t hour_angle = TRIG_MAX_ANGLE * ((((24 - t->tm_hour) % 12) * 6) + ((60 - t->tm_min) / 10)) / (12 * 6);
+  int32_t hour_angle = TRIG_MAX_ANGLE - (TRIG_MAX_ANGLE * (((t->tm_hour % 12) * 6) + (t->tm_min / 10))) / (12 * 6);
   gpath_rotate_to(s_hour_arrow, hour_angle);
   gpath_draw_filled(ctx, s_hour_arrow);
   gpath_draw_outline(ctx, s_hour_arrow);
