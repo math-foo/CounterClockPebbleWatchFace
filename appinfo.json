@@ -1,0 +1,26 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Ontology Sphere",
+    "longName": "CounterClock",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/counter_clock_bg.png",
+                "name": "COUNTER_CLOCK_BACKGROUND",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "CounterClock",
+    "uuid": "0583d0c2-a7aa-4972-b717-6bbab0086f26",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
